@@ -4,11 +4,16 @@
     --primery-text-color: #757575;
     --primery-white-color: #ffffff;
     --bkg-block-color: #2F303A;
+    --primery-bkg-color: #ffffff;
 
 }
 
 body {
-    font-family: roboto, sans-serif;
+    color: var(--primery-text-color);
+    background-color: var(--primery-bkg-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 3%;
 }
 
 .logo {
@@ -20,7 +25,6 @@ body {
    font-weight: 700;
    font-size: 26px;
    line-height: 1.2;
-   letter-spacing: 3%;
 }
 
 .logo-web {
@@ -42,7 +46,8 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.contact:hover {
     color: var(--accent-color);
 }
 
@@ -51,6 +56,10 @@ li>.contact {
 }
 
 /* Hero  */
+.section-hero {
+    background-color: var(--bkg-block-color);
+}
+
 .title-hero {
     color: var(--primery-white-color);
     background-color: var(--bkg-block-color);
@@ -74,4 +83,23 @@ li>.contact {
     letter-spacing: 6%;
 }
 
-/* Переваги */
+/* Особливості */
+.subtitle-feature {
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.text {
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
